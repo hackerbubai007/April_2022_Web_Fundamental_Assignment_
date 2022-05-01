@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>List Element</title>
+    <style>
+        h1{
+            color: brown;
+            text-align: center;
+        }
+        #type{
+            color: orangered;
+        }
+        #inner{
+            color:black;
+        }
+        #attri{
+            color: orangered;
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="./Topic.html"><h1><u>List Element</u></h1></a> 
+    <ul>
+        <li>It will help us to structure the data in a particular order or in unorder.</li>
+        <li>It is divided into 2-type: </li>
+        <ul id="type">
+            <li><b>Order List</b></li>
+            <ol id="inner">
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+            <li><b>Unorder List</b></li>
+            <ul id="inner">
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </ul>
+    </ul>
+    <h2>Attributes of OL and UL</h2>
+    <ul type="arrow">
+        <li><b>Ordered List</b></li>
+        <ul>
+            <li><b id="attri">Attribute: </b> </li>
+                <ol>
+                    <li>type="1","a","A","i","I"</li>
+                    <li>start attribute only work with number for example start="1001"</li>
+                </ol>
+            <li>By default number will be printed.</li>
+        </ul>
+        <li><b>Unordered List</b></li>
+        <ul>
+            <li><b id="attri">Attribute: </b>type="disc","circle","square","none"</li>
+            <li>By default disc will be printed.</li>
+        </ul>
+    </ul>
+
+</body>
+</html>
