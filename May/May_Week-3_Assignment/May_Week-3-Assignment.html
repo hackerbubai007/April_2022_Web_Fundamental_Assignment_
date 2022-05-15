@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------Navbar Region------------- */
+
+.heading-div {
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.navbar-toggler {
+    padding: 0 !important;
+    border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.navbar-toggler img {
+    width: 35px;
+}
+
+.navbar-brand {
+    margin-left: 4rem;
+}
+
+.navbar-brand img {
+    width: 54%;
+}
+
+.navbar-nav {
+    margin-right: 11%;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-left: 30px;
+    color: #ffbe40 !important;
+}
+
+.nav-link:hover {
+    color: #0E2431 !important;
+}
+
+
+/* ----------Intro region---------------- */
+
+.wrapper {
+    margin: 25px auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    /* box-shadow: 0 0 40px 2px rgba(37, 73, 214, 0.18); */
+}
+
+.feature-box {
+    padding: 30px;
+}
+
+.feature-box h1 {
+    margin-top: 8%;
+    color: #0E2431;
+    font-weight: 700;
+}
+
+.feature-box .title-name {
+    margin-top: 20%;
+    color: #ffbe40;
+}
+
+.feature-box .icons {
+    margin: 50px auto;
+}
+
+.feature-box .icons a {
+    text-decoration: none !important;
+    background-color: transparent!important;
+    color: #0E2431;
+    padding: 10px 12px;
+    margin-right: 30px;
+    border: 0px!important;
+}
+
+.feature-box .icons a:hover {
+    color: #ffbe40;
+}
+
+.fab {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.feature-box a {
+    text-decoration: none !important;
+    background-color: #000;
+    color: #ffbe40;
+    border-radius: 0.5rem;
+    padding: 10px 12px;
+    margin-right: 30px;
+    border: 2px solid #000 !important;
+}
+
+.feature-box a:hover {
+    color: #ddd;
+}
+
+.feature-img {
+    width: 86%;
+    padding: 40px;
+}
+
+.wave-img {
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 24%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* ------------About us section---------- */
+
+#about-us {
+    margin: 2% auto;
+}
+
+.section-title h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffbe40;
+}
+
+.section-title h2:hover {
+    color: #0E2431;
+    cursor: pointer;
+}
+
+.left-col img {
+    width: 70%;
+    margin: 0% 8%;
+}
+
+.right-col p {
+    margin: 11% auto;
+}
+
+
+/* ----------Skill Section-------- */
+
+#skills {
+    margin: 2% auto;
+}
+
+.skills-left-col h5 {
+    font-weight: 600;
+}
+
+.skills-right-col img {
+    width: 100%;
+}
+
+.skill-card {
+    border-bottom: 5px solid #ffbe40 !important;
+    margin: 9px auto;
+}
+
+.skill-card-body {
+    padding: 8px 14px !important;
+}
+
+.skill-name .s-name {
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 2%;
+}
+
+.skill-name .s-percent {
+    font-weight: 600;
+    font-size: 14px;
+    float: right;
+}
+
+.skill-name .fab {
+    color: #ffbe40;
+}
+
+.skill-name .fab:hover {
+    color: #0E2431;
+}
+
+
+/* -----------Work Section------------ */
+
+#work {
+    margin: 5% auto;
+}
+
+.work-wrapper {
+    margin: 4% auto;
+}
+
+.work-wrapper .section-images {
+    margin: 2% auto;
+}
+
+.work-card {
+    box-shadow: 0 5px 11px rgb(14 36 49 / 6%);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.work-card img:hover {
+    transform: scale(1.1);
+}
+
+.work-card img {
+    transition: 1s;
+    cursor: pointer;
+    height: 28vh;
+}
+
+.work-card-body h5 {
+    font-size: 15px;
+}
+
+
+/* ------------------Contact Section-------------- */
+
+#contact {
+    margin: 2% auto;
+}
+
+.contact-wrapper {
+    margin: 2% 30%;
+}
+
+.form-control {
+    border: 2px solid #ffbe40 !important;
+}
+
+.form-control:focus {
+    border: 2px solid #0E2431 !important;
+}
+
+.contact-wrapper .btn-submit {
+    color: #ddd;
+    background: #0E2431;
+}
+
+.contact-wrapper .btn-submit:hover {
+    color: #ffbe40;
+    border: 1px solid #0E2431;
+    background: transparent;
+    box-shadow: 0 10px 36px rgb(0 0 0 / 15%);
+}
+
+
+/* ----------------Footer Section--------------- */
+
+.footer-div {
+    background: #0E2431;
+    text-align: center;
+    height: 36vh;
+}
+
+.footer-title h2 {
+    font-weight: 600;
+    color: #ffbe40;
+    padding: 2%;
+}
+
+.social-sites .footer-icons a {
+    text-decoration: none !important;
+    background-color: transparent!important;
+    color: #ffbe40;
+    padding: 10px 12px;
+    margin-right: 30px;
+}
+
+.social-sites .footer-icons a:hover {
+    color: #fff;
+}
+
+.footer-icons a .fab {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.social-sites p {
+    font-size: 15px;
+    padding: 35px 0px;
+    color: #ffbe40;
+}
+
+@media only screen and (max-width:990px) {
+    .navbar-brand {
+        margin-left: 0rem;
+    }
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    .skills-left-col h5 {
+        font-size: 1rem;
+    }
+    .wave-img {
+        display: none;
+    }
+    .feature-box a {
+        padding: 5px 8px;
+        margin-right: 10px;
+    }
+    .left-col img {
+        margin: 0% 16%;
+    }
+    #work {
+        margin: 15% auto;
+    }
+    .work-card {
+        margin: 2% auto;
+    }
+    .contact-wrapper {
+        margin: 2% 11%;
+    }
+    .footer-div {
+        margin-top: 12%;
+    }
+    .footer-title h2 {
+        padding: 8%;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- ----------Navigation Bar Section Starts---------- -->
+
+    <header class="heading-div">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/s.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/menu (1).png" alt="menu-bar">              
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------Navigation Bar Section Ends---------- -->
+
+    <!-- ----------Intro Section Starts---------- -->
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/sideImg.png" class="feature-img" alt="feature-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <h1>Hi, <br> I'm <span class="title-name">Dipankar Mandal</span>
+                            <br> Software Developer
+                        </h1>
+                        <div class="icons">
+                            <a href="#" class="ico">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="ico">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="ico">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="btn-one">Download Resume</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------Intro Section Ends---------- -->
+
+    <img src="images/wave.png" alt="" class="wave-img">
+
+    <!-- ----------About Section Starts---------- -->
+    <div class="container" id="about-us">
+        <div class="section-title">
+            <h2>About</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 left-col">
+                <img src="images/left-img.PNG" class="left-img" alt="">
+            </div>
+            <div class="col-md-6 right-col">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus ex nulla inventore, repellat debitis animi, maxime at ullam odio dignissimos expedita cumque eligendi aspernatur temporibus, voluptas a repellendus reiciendis. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Mollitia doloribus ex nulla inventore, repellat debitis animi, maxime at ullam odio dignissimos expedita cumque eligendi aspernatur temporibus, voluptas a repellendus reiciendis.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ----------About Section Ends---------- -->
+
+    <!-- ----------Skills Section Starts---------- -->
+
+    <div class="container" id="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 skills-left-col">
+                <h5>Proffesional Skills</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto nulla ipsum ipsa temporibus itaque excepturi aut accusamus quia tempora!</p>
+                <div class="card skill-card">
+                    <div class="card-body skill-card-body">
+                        <div class="skill-name">
+                            <i class="fab fa-js-square"></i>
+                            <span class="s-name">JavaScript</span>
+                            <span class="s-percent">95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skill-card">
+                    <div class="card-body skill-card-body">
+                        <div class="skill-name">
+                            <i class="fab fa-angular"></i>
+                            <span class="s-name">Angular</span>
+                            <span class="s-percent">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skill-card">
+                    <div class="card-body skill-card-body">
+                        <div class="skill-name">
+                            <i class="fab fa-node-js"></i>
+                            <span class="s-name">Node.js</span>
+                            <span class="s-percent">95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card skill-card">
+                    <div class="card-body skill-card-body">
+                        <div class="skill-name">
+                            <i class="fab fa-react"></i>
+                            <span class="s-name">React.js</span>
+                            <span class="s-percent">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 skills-right-col">
+                <img src="images/skill-right-img.PNG" class="left-img" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------Skills Section Ends---------- -->
+
+    <!-- ----------Work Section Starts---------- -->
+
+    <div class="container" id="work">
+        <div class="section-title">
+            <h2>My Work</h2>
+        </div>
+        <div class="work-wrapper">
+            <div class="row section-images">
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row section-images">
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card">
+                        <img src="images/work6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body work-card-body">
+                            <h5 class="card-title">LMS Website Demo</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------Work Section Ends---------- -->
+
+    <!-- ----------Work Section Starts---------- -->
+
+    <div class="container" id="contact">
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-wrapper">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-submit">Submit</button>
+
+
+        </div>
+
+    </div>
+
+    <!-- ----------Work Section Ends---------- -->
+
+    <!-- ----------Footer Section Starts---------- -->
+
+    <footer class="footer-div">
+        <div class="container" id="footer">
+            <div class="footer-title">
+                <h2>Dipankar Mandal</h2>
+                <div class="social-sites">
+                    <div class="footer-icons">
+                        <a href="#" class="ico">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>© <span id="year"></span>
+                            <script>
+                                var d = new Date();
+                                var n = d.getFullYear();
+                                document.getElementById("year").innerHTML = n;
+                            </script>
+                            copyright all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ----------Footer Section Ends---------- -->
+
+
+
+
+
+</body>
+
+</html>
